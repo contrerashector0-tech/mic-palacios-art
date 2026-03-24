@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dark Shadows Art Studio — Michelle Palacios, self-taught traditional artist based in El Paso, Texas. Gothic, Día de los Muertos, and pop culture inspired original art, commissions, and prints.">
+  <meta property="og:title" content="Dark Shadows Art Studio | Michelle Palacios">
+  <meta property="og:description" content="Traditional artist from El Paso, TX. Original paintings, custom commissions, and prints.">
+  <meta property="og:type" content="website">
+  <title>Dark Shadows Art Studio | Michelle Palacios</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Cinzel:wght@400;600;700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="nav" aria-label="Main navigation">
+    <div class="nav-inner container">
+      <a href="#hero" class="nav-logo" aria-label="Dark Shadows Art Studio — Home">
+        Dark Shadows Art Studio
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#gallery" class="nav-link">Portfolio</a></li>
+        <li><a href="#commission" class="nav-link">Commissions</a></li>
+        <li><a href="#prints" class="nav-link">Prints</a></li>
+        <li><a href="#events" class="nav-link">Events</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section id="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-pattern"></div>
+        <div class="hero-vignette"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-ornament" aria-hidden="true">
+          <svg width="200" height="24" viewBox="0 0 200 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="12" x2="82" y2="12" stroke="#c9a84c" stroke-width="0.75" stroke-opacity="0.6"/>
+            <polygon points="100,2 106,12 100,22 94,12" fill="#c9a84c" opacity="0.9"/>
+            <line x1="118" y1="12" x2="200" y2="12" stroke="#c9a84c" stroke-width="0.75" stroke-opacity="0.6"/>
+            <circle cx="14" cy="12" r="2.5" fill="#c9a84c" opacity="0.4"/>
+            <circle cx="186" cy="12" r="2.5" fill="#c9a84c" opacity="0.4"/>
+            <circle cx="38" cy="12" r="1.5" fill="#c9a84c" opacity="0.3"/>
+            <circle cx="162" cy="12" r="1.5" fill="#c9a84c" opacity="0.3"/>
+          </svg>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="hero-title-line">Dark Shadows</span>
+          <span class="hero-title-line">Art Studio</span>
+        </h1>
+
+        <p class="hero-artist">Michelle Palacios</p>
+        <p class="hero-tagline">Self-Taught Traditional Artist &nbsp;·&nbsp; El Paso, Texas</p>
+
+        <div class="hero-cta" role="group" aria-label="Main calls to action">
+          <a href="#gallery" class="btn btn-primary">View Portfolio</a>
+          <a href="#commission" class="btn btn-outline">Request Commission</a>
+        </div>
+
+        <div class="hero-ornament hero-ornament-bottom" aria-hidden="true">
+          <svg width="200" height="24" viewBox="0 0 200 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="12" x2="82" y2="12" stroke="#c9a84c" stroke-width="0.75" stroke-opacity="0.6"/>
+            <polygon points="100,2 106,12 100,22 94,12" fill="#c9a84c" opacity="0.9"/>
+            <line x1="118" y1="12" x2="200" y2="12" stroke="#c9a84c" stroke-width="0.75" stroke-opacity="0.6"/>
+            <circle cx="14" cy="12" r="2.5" fill="#c9a84c" opacity="0.4"/>
+            <circle cx="186" cy="12" r="2.5" fill="#c9a84c" opacity="0.4"/>
+            <circle cx="38" cy="12" r="1.5" fill="#c9a84c" opacity="0.3"/>
+            <circle cx="162" cy="12" r="1.5" fill="#c9a84c" opacity="0.3"/>
+          </svg>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll" aria-label="Scroll down">
+        <span class="hero-scroll-text">Scroll</span>
+        <div class="hero-scroll-line" aria-hidden="true"></div>
+        <svg class="hero-scroll-arrow" width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
+          <path d="M1 1L8 8L15 1" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <h2 id="about-heading" class="section-title">The Artist</h2>
+          <p class="section-subtitle">Where shadow meets art</p>
+          <div class="ornament-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo-wrap">
+            <!-- Replace the placeholder below with a real artist photo:
+                 <img src="images/michelle-palacios.jpg" alt="Michelle Palacios in her studio" class="about-photo">
+            -->
+            <div class="about-photo-placeholder" aria-label="Artist portrait — photo coming soon">
+              <div class="about-photo-inner">
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <circle cx="32" cy="24" r="14" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.6"/>
+                  <path d="M8 56c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="#c9a84c" stroke-width="1" stroke-opacity="0.6"/>
+                </svg>
+                <p>Photo Coming Soon</p>
+              </div>
+            </div>
+            <div class="about-photo-frame" aria-hidden="true"></div>
+          </div>
+
+          <div class="about-text">
+            <blockquote class="about-quote">
+              "Art is how I speak what words can't hold — the shadows, the memories, the beauty in what's unseen."
+            </blockquote>
+
+            <div class="about-bio">
+              <p>Michelle Palacios is a self-taught traditional artist from El Paso, Texas — a border city where Mexican cultural heritage and American art run deep. Under the banner of <strong>Dark Shadows Art Studio</strong>, her work explores the space where gothic shadow meets vibrant Chicana tradition.</p>
+
+              <p>Drawing on El Paso's rich Día de los Muertos culture, her paintings breathe life into calaveras, sugar skulls, and ceremonial florals — rendered in dark, high-contrast compositions that honor the dead while celebrating the living. Her pop culture fan art brings beloved characters into a gothic sensibility, and her custom commission work captures subjects with emotional depth and detailed craftsmanship.</p>
+
+              <p>Michelle's work has been displayed at <strong>El Paso's Finest</strong> gallery in the Downtown Arts District, and she is a regular vendor at the El Paso MCAD Día de los Muertos Festival and El Paso Comic Con — bringing her art directly to the community that inspires it.</p>
+            </div>
+
+            <ul class="about-tags" role="list" aria-label="Art specialties">
+              <li>Día de los Muertos</li>
+              <li>Gothic Originals</li>
+              <li>Fan Art</li>
+              <li>Custom Portraits</li>
+              <li>Traditional Media</li>
+              <li>El Paso, TX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY / PORTFOLIO
+    ============================================================ -->
+    <section id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <h2 id="gallery-heading" class="section-title">Portfolio</h2>
+          <p class="section-subtitle">Original works &amp; commissioned pieces</p>
+          <div class="ornament-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+          <button class="filter-btn active" data-filter="all">All Work</button>
+          <button class="filter-btn" data-filter="Día de los Muertos">Día de los Muertos</button>
+          <button class="filter-btn" data-filter="Gothic Original">Gothic</button>
+          <button class="filter-btn" data-filter="Fan Art">Fan Art</button>
+          <button class="filter-btn" data-filter="Custom Portrait">Portraits</button>
+        </div>
+
+        <!-- Gallery items are rendered by script.js -->
+        <div class="gallery-grid" id="gallery-grid" role="list" aria-label="Art portfolio">
+          <!-- JavaScript renders gallery items here -->
+        </div>
+
+        <p class="gallery-note">
+          <!-- Replace placeholder images by updating the `image` field in the GALLERY array in script.js -->
+          All works shown are representative of Dark Shadows Art Studio's style and subject matter.
+          <a href="#commission" class="link-gold">Commission a custom piece →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         COMMISSION FORM
+    ============================================================ -->
+    <section id="commission" aria-labelledby="commission-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <h2 id="commission-heading" class="section-title">Request a Commission</h2>
+          <p class="section-subtitle">Let's create something made just for you</p>
+          <div class="ornament-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="commission-layout">
+          <div class="commission-info">
+            <div class="commission-status" id="commission-status" data-status="open">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span class="status-text">Currently Open for Commissions</span>
+            </div>
+
+            <h3>How It Works</h3>
+            <ol class="commission-steps">
+              <li>
+                <span class="step-num">01</span>
+                <div>
+                  <strong>Submit your request</strong>
+                  <p>Fill out the form with your idea, size, timeline, and any reference photos.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">02</span>
+                <div>
+                  <strong>Michelle reviews &amp; quotes</strong>
+                  <p>She'll respond within 3–5 business days with a custom quote and timeline.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">03</span>
+                <div>
+                  <strong>Deposit &amp; creation begins</strong>
+                  <p>A deposit secures your slot. Michelle keeps you updated throughout the process.</p>
+                </div>
+              </li>
+              <li>
+                <span class="step-num">04</span>
+                <div>
+                  <strong>Delivery &amp; final payment</strong>
+                  <p>Once complete, you receive your one-of-a-kind original. Local pickup or shipping available.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="commission-note-box">
+              <p>Prefer to reach out directly? DM <a href="https://www.instagram.com/mic_palacios13/" target="_blank" rel="noopener noreferrer" class="link-gold">@mic_palacios13</a> on Instagram to start a conversation.</p>
+            </div>
+          </div>
+
+          <div class="commission-form-wrap">
+            <!--
+              PRODUCTION SETUP:
+              To receive form submissions by email, sign up at https://formspree.io
+              and replace the action URL below with your form endpoint:
+              <form id="commission-form" action="https://formspree.io/f/YOUR_ID" method="POST">
+              The JavaScript will intercept the submit and show a success modal —
+              remove the JS handler in script.js to use native Formspree submission.
+            -->
+            <form id="commission-form" novalidate aria-label="Commission request form">
+              <h3 class="form-title">Commission Request</h3>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-name">Your Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                  <input type="text" id="c-name" name="name" required autocomplete="name" placeholder="Full name">
+                </div>
+                <div class="form-group">
+                  <label for="c-email">Email Address <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                  <input type="email" id="c-email" name="email" required autocomplete="email" placeholder="your@email.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c-instagram">Instagram Handle <span class="label-optional">(optional)</span></label>
+                <input type="text" id="c-instagram" name="instagram" placeholder="@yourusername">
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-type">Type of Piece <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                  <div class="select-wrap">
+                    <select id="c-type" name="type" required>
+                      <option value="" disabled selected>Select type…</option>
+                      <option value="original">Original Painting</option>
+                      <option value="portrait">Custom Portrait</option>
+                      <option value="dotd">Día de los Muertos Tribute</option>
+                      <option value="memorial">Memorial Portrait</option>
+                      <option value="fan-art">Fan Art</option>
+                      <option value="gothic">Gothic Original</option>
+                      <option value="pet">Pet Portrait</option>
+                      <option value="other">Other (describe below)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="c-size">Canvas Size <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                  <div class="select-wrap">
+                    <select id="c-size" name="size" required>
+                      <option value="" disabled selected>Select size…</option>
+                      <option value="5x7">Small — 5″ × 7″</option>
+                      <option value="8x10">Medium — 8″ × 10″</option>
+                      <option value="11x14">Large — 11″ × 14″</option>
+                      <option value="16x20">Extra Large — 16″ × 20″</option>
+                      <option value="18x24">Statement — 18″ × 24″ or larger</option>
+                      <option value="custom">Custom Size (specify below)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c-subject">Describe Your Vision <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                <textarea id="c-subject" name="subject" required rows="5"
+                  placeholder="Describe what you'd like — subjects, mood, style preferences, color palette, or any details that matter to you. The more context, the better."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="c-reference">Reference Photos <span class="label-optional">(optional)</span></label>
+                <div class="file-drop-zone" id="file-drop-zone">
+                  <input type="file" id="c-reference" name="reference" multiple accept="image/*" class="file-input">
+                  <div class="file-drop-label">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M16 4L16 20M16 4L10 10M16 4L22 10" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M4 24v3a1 1 0 001 1h22a1 1 0 001-1v-3" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <span>Drop images here or <span class="link-gold">click to upload</span></span>
+                    <span class="file-hint">JPG, PNG, HEIC — up to 10 files</span>
+                  </div>
+                  <div class="file-list" id="file-list" aria-live="polite"></div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-budget">Budget Range <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                  <div class="select-wrap">
+                    <select id="c-budget" name="budget" required>
+                      <option value="" disabled selected>Select range…</option>
+                      <option value="under-100">Under $100</option>
+                      <option value="100-200">$100 – $200</option>
+                      <option value="200-350">$200 – $350</option>
+                      <option value="350-500">$350 – $500</option>
+                      <option value="500-plus">$500+</option>
+                      <option value="flexible">Let's discuss</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="c-timeline">Timeline <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                  <div class="select-wrap">
+                    <select id="c-timeline" name="timeline" required>
+                      <option value="" disabled selected>Select timeline…</option>
+                      <option value="2-4wks">2 – 4 weeks</option>
+                      <option value="1-2mo">1 – 2 months</option>
+                      <option value="3mo">About 3 months</option>
+                      <option value="flexible">Flexible</option>
+                      <option value="rush">Rush (fees may apply)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="c-notes">Additional Notes <span class="label-optional">(optional)</span></label>
+                <textarea id="c-notes" name="notes" rows="3"
+                  placeholder="Questions, special requests, or anything else I should know…"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Submit Commission Request
+              </button>
+
+              <p class="form-footer-note">
+                Michelle will reach out within 3–5 business days to discuss your commission and provide a custom quote. Pricing is based on size, complexity, and medium.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRINTS
+    ============================================================ -->
+    <section id="prints" aria-labelledby="prints-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <h2 id="prints-heading" class="section-title">Prints &amp; Originals</h2>
+          <p class="section-subtitle">Bring Dark Shadows home</p>
+          <div class="ornament-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="prints-layout">
+          <div class="prints-gallery-info">
+            <h3>Find Work In Person</h3>
+            <p>Original paintings and fine art prints from Dark Shadows Art Studio are available in person at <strong>El Paso's Finest</strong> — a curated gallery celebrating local El Paso artists in the heart of Downtown.</p>
+
+            <div class="gallery-location-card">
+              <div class="gallery-location-icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2C9.582 2 6 5.582 6 10c0 6.627 8 16 8 16s8-9.373 8-16c0-4.418-3.582-8-8-8z" stroke="#c9a84c" stroke-width="1.25"/>
+                  <circle cx="14" cy="10" r="3" stroke="#c9a84c" stroke-width="1.25"/>
+                </svg>
+              </div>
+              <div class="gallery-location-info">
+                <h4>El Paso's Finest Gallery</h4>
+                <address>
+                  314 N. Mesa St.<br>
+                  El Paso, TX
+                </address>
+                <div class="gallery-hours">
+                  <span>Tue: 11am – 5pm</span>
+                  <span>Wed – Thu: 11am – 6pm</span>
+                  <span>Fri – Sat: 12pm – 8pm</span>
+                </div>
+                <a href="https://www.instagram.com/shopepfinest/" target="_blank" rel="noopener noreferrer" class="link-gold gallery-ig-link">
+                  @shopepfinest on Instagram
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M2 12L12 2M12 2H5M12 2V9" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="prints-types">
+              <div class="prints-type-item">
+                <span class="prints-type-icon" aria-hidden="true">✦</span>
+                <div>
+                  <strong>Original Paintings</strong>
+                  <p>One-of-a-kind traditional media works — unique originals you won't find anywhere else.</p>
+                </div>
+              </div>
+              <div class="prints-type-item">
+                <span class="prints-type-icon" aria-hidden="true">✦</span>
+                <div>
+                  <strong>Fine Art Prints</strong>
+                  <p>High-quality reproduction prints of selected works. Inquire for available titles and sizing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="prints-inquiry-form">
+            <h3>Inquire About a Print</h3>
+            <p>Don't see what you're looking for at the gallery? Submit a print inquiry and Michelle will reach out about availability and pricing.</p>
+
+            <form id="prints-form" novalidate aria-label="Print inquiry form">
+              <div class="form-group">
+                <label for="p-name">Your Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                <input type="text" id="p-name" name="name" required autocomplete="name" placeholder="Full name">
+              </div>
+              <div class="form-group">
+                <label for="p-email">Email Address <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+                <input type="email" id="p-email" name="email" required autocomplete="email" placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label for="p-piece">Piece You're Interested In <span class="label-optional">(optional)</span></label>
+                <input type="text" id="p-piece" name="piece" placeholder="Title or description of the piece">
+              </div>
+              <div class="form-group">
+                <label for="p-format">Format <span class="label-optional">(optional)</span></label>
+                <div class="select-wrap">
+                  <select id="p-format" name="format">
+                    <option value="">No preference</option>
+                    <option value="print">Fine Art Print</option>
+                    <option value="original">Original Painting</option>
+                    <option value="either">Either / Open to both</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="p-message">Message <span class="label-optional">(optional)</span></label>
+                <textarea id="p-message" name="message" rows="3"
+                  placeholder="Size preferences, shipping needs, questions, or anything else…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EVENTS
+    ============================================================ -->
+    <section id="events" aria-labelledby="events-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <h2 id="events-heading" class="section-title">Find Me In Person</h2>
+          <p class="section-subtitle">Markets, festivals &amp; exhibitions</p>
+          <div class="ornament-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="events-grid">
+
+          <article class="event-card" aria-label="Día de los Muertos Desfile & Festival 2026">
+            <div class="event-date-badge" aria-hidden="true">
+              <span class="event-month">NOV</span>
+              <span class="event-day">1&ndash;2</span>
+              <span class="event-year">2026</span>
+            </div>
+            <div class="event-body">
+              <span class="event-tag">Festival</span>
+              <h3>Día de los Muertos Desfile &amp; Festival</h3>
+              <p class="event-location">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M7 1C4.791 1 3 2.791 3 5c0 3.314 4 8 4 8s4-4.686 4-8c0-2.209-1.791-4-4-4z" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="7" cy="5" r="1.5" stroke="currentColor" stroke-width="1"/>
+                </svg>
+                El Paso MCAD — El Paso, TX
+              </p>
+              <p class="event-desc">The annual celebration of Día de los Muertos with a community procession, live music, and a vibrant mercadito of local artists and vendors. Find Dark Shadows Art Studio at the market — original art, prints, and commission bookings.</p>
+              <span class="event-status upcoming">Upcoming</span>
+            </div>
+          </article>
+
+          <article class="event-card" aria-label="El Paso Comic Con 2026">
+            <div class="event-date-badge" aria-hidden="true">
+              <span class="event-month">SUM</span>
+              <span class="event-day">TBD</span>
+              <span class="event-year">2026</span>
+            </div>
+            <div class="event-body">
+              <span class="event-tag">Convention</span>
+              <h3>El Paso Comic Con</h3>
+              <p class="event-location">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M7 1C4.791 1 3 2.791 3 5c0 3.314 4 8 4 8s4-4.686 4-8c0-2.209-1.791-4-4-4z" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="7" cy="5" r="1.5" stroke="currentColor" stroke-width="1"/>
+                </svg>
+                El Paso Convention Center — El Paso, TX
+              </p>
+              <p class="event-desc">The Southwest's premier fan convention. Visit the Dark Shadows Art Studio vendor table for original art, fan art prints, and on-site commission bookings. Cosplay welcome.</p>
+              <span class="event-status tba">Dates TBA</span>
+            </div>
+          </article>
+
+          <article class="event-card" aria-label="Holiday Art Market 2026">
+            <div class="event-date-badge" aria-hidden="true">
+              <span class="event-month">DEC</span>
+              <span class="event-day">TBD</span>
+              <span class="event-year">2026</span>
+            </div>
+            <div class="event-body">
+              <span class="event-tag">Market</span>
+              <h3>Holiday Art Market</h3>
+              <p class="event-location">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M7 1C4.791 1 3 2.791 3 5c0 3.314 4 8 4 8s4-4.686 4-8c0-2.209-1.791-4-4-4z" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="7" cy="5" r="1.5" stroke="currentColor" stroke-width="1"/>
+                </svg>
+                Downtown El Paso Arts District
+              </p>
+              <p class="event-desc">Shop original artwork and prints for the holiday season. One-of-a-kind gifts from El Paso's local arts community. The perfect place to find a Dark Shadows piece for someone you love — or yourself.</p>
+              <span class="event-status tba">TBA</span>
+            </div>
+          </article>
+
+          <article class="event-card ongoing" aria-label="El Paso's Finest Gallery — ongoing display">
+            <div class="event-date-badge ongoing-badge" aria-hidden="true">
+              <span class="event-month">ON</span>
+              <span class="event-day">NOW</span>
+              <span class="event-year">OPEN</span>
+            </div>
+            <div class="event-body">
+              <span class="event-tag ongoing-tag">Gallery</span>
+              <h3>El Paso's Finest</h3>
+              <p class="event-location">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M7 1C4.791 1 3 2.791 3 5c0 3.314 4 8 4 8s4-4.686 4-8c0-2.209-1.791-4-4-4z" stroke="currentColor" stroke-width="1"/>
+                  <circle cx="7" cy="5" r="1.5" stroke="currentColor" stroke-width="1"/>
+                </svg>
+                314 N. Mesa St., El Paso, TX
+              </p>
+              <p class="event-desc">Original works and fine art prints by Michelle Palacios are on ongoing display and for sale at El Paso's Finest gallery — Downtown El Paso's hub for local artist work.</p>
+              <span class="event-status ongoing-pill">Ongoing Display</span>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="events-follow">
+          Follow <a href="https://www.instagram.com/mic_palacios13/" target="_blank" rel="noopener noreferrer" class="link-gold">@mic_palacios13</a> on Instagram for the latest event announcements and market dates.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="ornament-line" aria-hidden="true"></div>
+          <h2 id="contact-heading" class="section-title">Connect</h2>
+          <p class="section-subtitle">Let's create something beautiful together</p>
+          <div class="ornament-line" aria-hidden="true"></div>
+        </div>
+
+        <div class="contact-grid">
+
+          <a href="https://www.instagram.com/mic_palacios13/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Follow on Instagram: @mic_palacios13">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="26" height="26" rx="7" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="16" cy="16" r="6" stroke="#c9a84c" stroke-width="1.5"/>
+                <circle cx="23.5" cy="8.5" r="1.5" fill="#c9a84c"/>
+              </svg>
+            </div>
+            <h3>Instagram</h3>
+            <p>@mic_palacios13</p>
+            <span class="contact-card-cta">Follow &amp; DM →</span>
+          </a>
+
+          <a href="https://www.facebook.com/michelle.palacios.71/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="Find on Facebook: Michelle Palacios">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="26" height="26" rx="7" stroke="#c9a84c" stroke-width="1.5"/>
+                <path d="M20 12h-2a1 1 0 00-1 1v2h3l-.5 3H17v7h-3v-7h-2v-3h2v-2a4 4 0 014-4h2v3z" stroke="#c9a84c" stroke-width="1.25" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Facebook</h3>
+            <p>Michelle Palacios</p>
+            <span class="contact-card-cta">Visit Page →</span>
+          </a>
+
+          <a href="https://www.instagram.com/shopepfinest/" target="_blank" rel="noopener noreferrer" class="contact-card" aria-label="El Paso's Finest Gallery: @shopepfinest">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 13h20v14a1 1 0 01-1 1H7a1 1 0 01-1-1V13z" stroke="#c9a84c" stroke-width="1.5"/>
+                <path d="M4 9l2 4h20l2-4H4z" stroke="#c9a84c" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M12 27v-8h8v8" stroke="#c9a84c" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M12 9V6a4 4 0 018 0v3" stroke="#c9a84c" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3>El Paso's Finest</h3>
+            <p>@shopepfinest</p>
+            <span class="contact-card-cta">Shop Gallery →</span>
+          </a>
+
+          <a href="#commission" class="contact-card contact-card-cta-card" aria-label="Request a commission">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6h24v20H4V6z" stroke="#c9a84c" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M10 12h12M10 17h8M10 22h6" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Commission</h3>
+            <p>Custom artwork</p>
+            <span class="contact-card-cta">Request Now →</span>
+          </a>
+
+        </div>
+
+        <div class="contact-location">
+          <p>Based in <strong>El Paso, Texas</strong> — local pickups available. Shipping across the US.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo" aria-label="Dark Shadows Art Studio">Dark Shadows Art Studio</span>
+        <p class="footer-tagline">Michelle Palacios &nbsp;·&nbsp; El Paso, Texas</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#gallery">Portfolio</a>
+        <a href="#commission">Commissions</a>
+        <a href="#prints">Prints</a>
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-social" aria-label="Social media links">
+        <a href="https://www.instagram.com/mic_palacios13/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @mic_palacios13">IG</a>
+        <a href="https://www.facebook.com/michelle.palacios.71/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+        <a href="https://www.instagram.com/shopepfinest/" target="_blank" rel="noopener noreferrer" aria-label="El Paso's Finest Gallery">Shop</a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; <span id="footer-year"></span> Dark Shadows Art Studio. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       LIGHTBOX
+  ============================================================ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close artwork viewer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous artwork">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="lightbox-content">
+        <div class="lightbox-img-wrap" id="lightbox-img-wrap">
+          <!-- Populated by JS -->
+        </div>
+        <div class="lightbox-info" id="lightbox-info">
+          <span class="lightbox-category" id="lightbox-category"></span>
+          <h2 class="lightbox-title" id="lightbox-title"></h2>
+          <p class="lightbox-medium" id="lightbox-medium"></p>
+          <p class="lightbox-desc" id="lightbox-desc"></p>
+          <a href="#commission" class="btn btn-outline btn-sm lightbox-commission-btn" id="lightbox-commission-btn">Commission Similar Work</a>
+        </div>
+      </div>
+
+      <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next artwork">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SUCCESS MODALS
+  ============================================================ -->
+  <div id="commission-success" class="success-modal" role="dialog" aria-modal="true" aria-label="Commission request sent" hidden>
+    <div class="success-modal-box">
+      <div class="success-icon" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="22" stroke="#c9a84c" stroke-width="1.5"/>
+          <path d="M14 24l7 7 13-13" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3>Request Received!</h3>
+      <p>Thank you for your commission inquiry. Michelle will review your request and get back to you within 3–5 business days.</p>
+      <p class="success-note">In the meantime, follow <a href="https://www.instagram.com/mic_palacios13/" target="_blank" rel="noopener noreferrer" class="link-gold">@mic_palacios13</a> for updates on current work.</p>
+      <button class="btn btn-outline" id="commission-success-close">Close</button>
+    </div>
+  </div>
+
+  <div id="prints-success" class="success-modal" role="dialog" aria-modal="true" aria-label="Print inquiry sent" hidden>
+    <div class="success-modal-box">
+      <div class="success-icon" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="24" cy="24" r="22" stroke="#c9a84c" stroke-width="1.5"/>
+          <path d="M14 24l7 7 13-13" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3>Inquiry Sent!</h3>
+      <p>Thank you for your interest in Dark Shadows Art Studio prints. Michelle will be in touch soon about availability and pricing.</p>
+      <p class="success-note">You can also browse and purchase work in person at <strong>El Paso's Finest</strong>, 314 N. Mesa St., El Paso, TX.</p>
+      <button class="btn btn-outline" id="prints-success-close">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
