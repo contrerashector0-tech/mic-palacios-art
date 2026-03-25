@@ -51,7 +51,7 @@
   --radius-lg:     8px;
 
   /* Typography */
-  --font-display: 'UnifrakturMaguntia', 'MedievalSharp', cursive;
+  --font-display: 'Manufacturing Consent', 'MedievalSharp', cursive;
   --font-sub:     'Cinzel', serif;
   --font-body:    'Inter', 'Lato', system-ui, sans-serif;
 
@@ -774,6 +774,37 @@ section:nth-child(odd) {
   font-size: .85rem;
   margin-top: 2rem;
   line-height: 1.8;
+}
+
+.gallery-instagram-cta {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.gallery-instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .65rem;
+  padding: .85rem 2.2rem;
+  background: transparent;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  font-family: var(--font-sub);
+  font-size: .95rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background .2s, color .2s, box-shadow .2s;
+  box-shadow: 0 0 0 0 rgba(201,168,76,.0);
+}
+
+.gallery-instagram-btn:hover,
+.gallery-instagram-btn:focus-visible {
+  background: var(--gold);
+  color: #0a0a0a;
+  box-shadow: 0 0 22px rgba(201,168,76,.35);
+  outline: none;
 }
 
 /* ── Commission ─────────────────────────────────────────────── */
