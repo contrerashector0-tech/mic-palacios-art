@@ -433,7 +433,7 @@ function initCommissionForm() {
     }
   }
 
-  // Validation + submit
+  // Validation + submit via Formsubmit.co
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     if (!validateForm(form)) return;
@@ -442,14 +442,29 @@ function initCommissionForm() {
     btn.disabled = true;
     btn.textContent = 'Sending…';
 
-    // Simulate async send (replace with real Formspree fetch in production)
-    setTimeout(() => {
-      form.reset();
-      if (fileList) fileList.innerHTML = '';
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        if (fileList) fileList.innerHTML = '';
+        showModal('commission-success');
+      } else {
+        alert('Something went wrong. Please try again or DM @mic_palacios13 on Instagram.');
+      }
+    })
+    .catch(() => {
+      alert('Network error. Please try again or DM @mic_palacios13 on Instagram.');
+    })
+    .finally(() => {
       btn.disabled = false;
       btn.textContent = 'Submit Commission Request';
-      showModal('commission-success');
-    }, 900);
+    });
   });
 }
 
@@ -466,12 +481,28 @@ function initPrintsForm() {
     btn.disabled = true;
     btn.textContent = 'Sending…';
 
-    setTimeout(() => {
-      form.reset();
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.reset();
+        showModal('prints-success');
+      } else {
+        alert('Something went wrong. Please try again or DM @mic_palacios13 on Instagram.');
+      }
+    })
+    .catch(() => {
+      alert('Network error. Please try again or DM @mic_palacios13 on Instagram.');
+    })
+    .finally(() => {
       btn.disabled = false;
       btn.textContent = 'Send Inquiry';
-      showModal('prints-success');
-    }, 900);
+    });
   });
 }
 
