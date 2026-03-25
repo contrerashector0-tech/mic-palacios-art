@@ -1207,6 +1207,142 @@ select option {
   line-height: 1.7;
 }
 
+/* ── Shop Prints Grid ───────────────────────────────────────── */
+.prints-shop-section {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+}
+
+.prints-shop-heading {
+  font-family: var(--font-sub);
+  font-size: 1rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.prints-shop-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 480px) {
+  .prints-shop-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+  .prints-shop-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .prints-shop-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.print-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  overflow: hidden;
+  transition: border-color .25s, box-shadow .25s, transform .25s;
+}
+
+.print-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: 0 8px 32px rgba(201, 168, 76, 0.12);
+  transform: translateY(-3px);
+}
+
+.print-card-image {
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(160deg, #1a1410 0%, #0f0c08 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.print-card-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 18px,
+      rgba(201, 168, 76, 0.03) 18px,
+      rgba(201, 168, 76, 0.03) 19px
+    );
+}
+
+.print-card-placeholder-title {
+  font-family: var(--font-sub);
+  font-size: .8rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(201, 168, 76, 0.35);
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.print-card-body {
+  padding: 1rem 1.1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  flex: 1;
+}
+
+.print-card-title {
+  font-family: var(--font-sub);
+  font-size: .95rem;
+  color: var(--text-primary);
+  letter-spacing: .04em;
+}
+
+.print-card-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  width: 100%;
+  padding: .6rem 1rem;
+  font-size: .8rem;
+}
+
+/* ── Prints Divider ─────────────────────────────────────────── */
+.prints-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: clamp(2.5rem, 6vw, 4rem) 0;
+  color: var(--gold-dim);
+}
+
+.prints-divider::before,
+.prints-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.prints-divider-ornament {
+  font-size: .9rem;
+  color: var(--gold-dim);
+  flex-shrink: 0;
+}
+
+.prints-inquiry-form {
+  max-width: 560px;
+}
+
 /* ── Events ─────────────────────────────────────────────────── */
 .events-grid {
   display: grid;

@@ -418,47 +418,77 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="prints-inquiry-form">
-            <h3>Inquire About a Print</h3>
-            <p>Don't see what you're looking for at the gallery? Submit a print inquiry and Michelle will reach out about availability and pricing.</p>
+        <!-- ── Shop Prints Online ── -->
+        <div class="prints-shop-section">
+          <h3 class="prints-shop-heading">Shop Prints Online</h3>
+          <div class="prints-shop-grid">
 
-            <form id="prints-form" action="https://formsubmit.co/Artist.micpalacios13@gmail.com" method="POST" novalidate aria-label="Print inquiry form">
-              <input type="hidden" name="_subject" value="New Print Inquiry - Dark Shadows Art Studio">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_next" value="https://contrerashector0-tech.github.io/mic-palacios-art/#prints">
-              <div class="form-group">
-                <label for="p-name">Your Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-                <input type="text" id="p-name" name="name" required autocomplete="name" placeholder="Full name">
+            <!-- PRINT CARD — copy this block to add more prints -->
+            <div class="print-card">
+              <div class="print-card-image" aria-hidden="true">
+                <span class="print-card-placeholder-title">Cactus Heart</span>
               </div>
-              <div class="form-group">
-                <label for="p-email">Email Address <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
-                <input type="email" id="p-email" name="email" required autocomplete="email" placeholder="your@email.com">
+              <div class="print-card-body">
+                <h4 class="print-card-title">Cactus Heart</h4>
+                <a href="https://square.link/u/5hsvewNH" target="_blank" rel="noopener noreferrer" class="btn btn-primary print-card-btn" aria-label="Purchase Cactus Heart print">
+                  Purchase
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M2 11L11 2M11 2H4.5M11 2V8.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                  </svg>
+                </a>
               </div>
-              <div class="form-group">
-                <label for="p-piece">Piece You're Interested In <span class="label-optional">(optional)</span></label>
-                <input type="text" id="p-piece" name="piece" placeholder="Title or description of the piece">
-              </div>
-              <div class="form-group">
-                <label for="p-format">Format <span class="label-optional">(optional)</span></label>
-                <div class="select-wrap">
-                  <select id="p-format" name="format">
-                    <option value="">No preference</option>
-                    <option value="print">Fine Art Print</option>
-                    <option value="original">Original Painting</option>
-                    <option value="either">Either / Open to both</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="p-message">Message <span class="label-optional">(optional)</span></label>
-                <textarea id="p-message" name="message" rows="3"
-                  placeholder="Size preferences, shipping needs, questions, or anything else…"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
-            </form>
+            </div>
+            <!-- END PRINT CARD -->
+
           </div>
+        </div>
+
+        <!-- ── Divider ── -->
+        <div class="prints-divider" aria-hidden="true">
+          <span class="prints-divider-ornament">✦</span>
+        </div>
+
+        <div class="prints-inquiry-form">
+          <h3>Inquire About a Print</h3>
+          <p>Don't see what you're looking for at the gallery? Submit a print inquiry and Michelle will reach out about availability and pricing.</p>
+
+          <form id="prints-form" action="https://formsubmit.co/Artist.micpalacios13@gmail.com" method="POST" novalidate aria-label="Print inquiry form">
+            <input type="hidden" name="_subject" value="New Print Inquiry - Dark Shadows Art Studio">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_next" value="https://contrerashector0-tech.github.io/mic-palacios-art/#prints">
+            <div class="form-group">
+              <label for="p-name">Your Name <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+              <input type="text" id="p-name" name="name" required autocomplete="name" placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label for="p-email">Email Address <span aria-hidden="true">*</span><span class="sr-only">(required)</span></label>
+              <input type="email" id="p-email" name="email" required autocomplete="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="p-piece">Piece You're Interested In <span class="label-optional">(optional)</span></label>
+              <input type="text" id="p-piece" name="piece" placeholder="Title or description of the piece">
+            </div>
+            <div class="form-group">
+              <label for="p-format">Format <span class="label-optional">(optional)</span></label>
+              <div class="select-wrap">
+                <select id="p-format" name="format">
+                  <option value="">No preference</option>
+                  <option value="print">Fine Art Print</option>
+                  <option value="original">Original Painting</option>
+                  <option value="either">Either / Open to both</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="p-message">Message <span class="label-optional">(optional)</span></label>
+              <textarea id="p-message" name="message" rows="3"
+                placeholder="Size preferences, shipping needs, questions, or anything else…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
+          </form>
         </div>
       </div>
     </section>
