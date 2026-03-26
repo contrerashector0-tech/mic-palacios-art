@@ -1087,6 +1087,65 @@ select option {
   line-height: 1.6;
 }
 
+/* ── Prints Page Hero ───────────────────────────────────────── */
+.prints-page-hero {
+  position: relative;
+  min-height: 36vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--nav-h, 72px) + 3rem) 1.5rem 3.5rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.prints-page-hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.prints-page-hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.prints-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  font-family: var(--font-sub);
+  font-size: .75rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color var(--t-fast);
+  margin-bottom: .5rem;
+}
+
+.prints-back-link:hover { color: var(--gold); }
+
+.prints-page-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 8vw, 5rem);
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: .02em;
+}
+
+.prints-page-subtitle {
+  font-family: var(--font-sub);
+  font-size: clamp(.85rem, 2.5vw, 1.05rem);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: .85;
+}
+
 /* ── Prints ─────────────────────────────────────────────────── */
 .prints-layout {
   display: grid;
