@@ -807,6 +807,30 @@ section:nth-child(odd) {
   outline: none;
 }
 
+/* ── Shop Prints CTA (under portfolio) ──────────────────────── */
+.gallery-shop-cta {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 2rem 1.5rem;
+  border: 1px solid var(--gold-ghost);
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(201,168,76,.04) 0%, transparent 100%);
+}
+
+.gallery-shop-text {
+  font-family: var(--font-sub);
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: .03em;
+}
+
+.gallery-shop-cta .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
 /* ── Commission ─────────────────────────────────────────────── */
 .commission-layout {
   display: grid;
