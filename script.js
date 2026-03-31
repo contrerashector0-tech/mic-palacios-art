@@ -41,15 +41,7 @@ const GALLERY = [
     image: 'images/Dead Flies.jpg',
     accent: '#c9a84c',
   },
-  {
-    id: 4,
-    title: 'Marigold Calavara',
-    category: 'Dark Shadows Original',
-    medium: 'Traditional media',
-    description: 'An original work by Michelle Palacios of Dark Shadows Art Studio.',
-    image: 'images/Marigold Calavara.jpg',
-    accent: '#c9a84c',
-  },
+
   {
     id: 5,
     title: 'Fire Fly Ghost',
