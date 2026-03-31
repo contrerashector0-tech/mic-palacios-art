@@ -21,6 +21,7 @@ const GALLERY = [
     description: 'An original work by Michelle Palacios of Dark Shadows Art Studio.',
     image: 'images/915 Poppies.jpeg',
     accent: '#c9a84c',
+    wide: true,
   },
   {
     id: 2,
@@ -120,7 +121,7 @@ function renderGallery() {
 
   GALLERY.forEach((item, idx) => {
     const el = document.createElement('div');
-    el.className = 'gallery-item reveal';
+    el.className = 'gallery-item reveal' + (item.wide ? ' gallery-item-wide' : '');
     el.style.setProperty('--reveal-delay', `${(idx % 4) * 80}ms`);
     el.setAttribute('role', 'listitem');
     el.setAttribute('tabindex', '0');

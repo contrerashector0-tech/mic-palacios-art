@@ -688,11 +688,28 @@ section:nth-child(odd) {
   text-align: center;
 }
 
+.gallery-item-wide {
+  grid-column: span 2;
+  aspect-ratio: 16/9;
+}
+
 .gallery-item-img {
   width: 100%; height: 100%;
   object-fit: cover;
   display: block;
   transition: transform var(--t-slow) var(--ease);
+}
+
+.gallery-item-wide .gallery-item-img {
+  object-fit: contain;
+  background: var(--black);
+}
+
+@media (max-width: 600px) {
+  .gallery-item-wide {
+    grid-column: span 1;
+    aspect-ratio: 4/3;
+  }
 }
 .gallery-item:hover .gallery-item-img {
   transform: scale(1.04);
