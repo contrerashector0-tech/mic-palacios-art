@@ -51,6 +51,15 @@ const GALLERY = [
   },
   {
     id: 5,
+    title: 'Fire Fly Ghost',
+    category: 'Dark Shadows Original',
+    medium: 'Traditional media',
+    description: 'An original work by Michelle Palacios of Dark Shadows Art Studio.',
+    image: 'images/Fire Fly ghost.jpeg',
+    accent: '#c9a84c',
+  },
+  {
+    id: 6,
     title: 'Wild Axolotl',
     category: 'Dark Shadows Original',
     medium: 'Traditional media',
