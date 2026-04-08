@@ -441,6 +441,7 @@ section:nth-child(odd) {
   display: flex;
   flex-direction: column;
   gap: .1em;
+  margin-bottom: .75rem;
   font-family: var(--font-display);
   font-size: clamp(3.5rem, 12vw, 8rem);
   font-weight: 400;
@@ -454,6 +455,7 @@ section:nth-child(odd) {
 }
 
 .hero-artist {
+  margin-bottom: .35rem;
   font-family: var(--font-sub);
   font-size: clamp(.95rem, 2.5vw, 1.25rem);
   letter-spacing: .3em;
@@ -463,6 +465,7 @@ section:nth-child(odd) {
 }
 
 .hero-tagline {
+  margin-bottom: .5rem;
   font-size: .85rem;
   letter-spacing: .12em;
   color: var(--text-muted);
@@ -474,7 +477,7 @@ section:nth-child(odd) {
   flex-wrap: wrap;
   gap: .875rem;
   justify-content: center;
-  margin-top: .5rem;
+  margin-top: 0;
   animation: heroFadeUp .7s var(--ease) 0.45s both;
 }
 
